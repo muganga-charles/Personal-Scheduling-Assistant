@@ -1,4 +1,5 @@
 from cs50 import SQL
+open("events.db",'w').close()
 database = SQL("sqlite:///Events.db")
 
 def createDatabase():
