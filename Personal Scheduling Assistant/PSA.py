@@ -1,8 +1,9 @@
 from cs50 import SQL
 database = SQL("sqlite:///Events.db")
+
 def createDatabase():
    
-    open("events.db",'w').close()
+    
     database.execute("CREATE TABLE categories (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL)")
     database.execute("CREATE TABLE events (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, category_id INTEGER NOT NULL, start_time TEXT NOT NULL, end_time TEXT NOT NULL, status TEXT NOT NULL ,FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE)")
 
