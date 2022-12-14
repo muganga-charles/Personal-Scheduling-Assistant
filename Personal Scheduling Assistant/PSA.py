@@ -1,6 +1,6 @@
 from cs50 import SQL
 open("events.db",'w').close()
-database = SQL("sqlite:///Events.db")
+database = SQL("sqlite:///Events.db")# making the database global so that it is accessed by all functions
 
 def createDatabase():
    
