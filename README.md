@@ -1,3 +1,4 @@
 # Personal-Scheduling-Assistant
 ### project 
-The project is built using python with appreciation of Object Oriented Programming
+The project is built using python with appreciation of Object Oriented Programming.
+It also utl
