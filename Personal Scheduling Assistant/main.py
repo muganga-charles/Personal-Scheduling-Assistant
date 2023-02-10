@@ -6,7 +6,7 @@ class Dates():
     def __init__(self):
         self.current_date = datetime.today().date()
 
-    def validateStartDate(self,start_time):
+    def validateStartDate(self,start_time):# method
         self.new_dates = datetime.strptime(self.start_time, "%d/%m/%Y").date()
         return self.new_dates
     
