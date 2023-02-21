@@ -1,6 +1,6 @@
 from plyer import notification
 from datetime import datetime
-#jjd
+#jj
 def Notification (date,time,activity):
     # convert the date from string to datetime format without time and return only the date 
     new_date = datetime.strptime(date, "%d/%m/%Y").date()
